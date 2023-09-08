@@ -31,4 +31,4 @@ async def join(ctx):
       await ctx.send("You are not connected to a voice channel.")
 
 if __name__ == '__main__':
-    bot.run('MTE0OTQ3ODA5ODcxNTI3OTQ5MA.GvZpc9.ZopgbWPTD-MSVa0aPbDfo4IlIuIwLNhvPn-BaA')
+    bot.run('Your token')
