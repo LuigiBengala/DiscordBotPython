@@ -1,4 +1,3 @@
 import nextcord
-import discord
 import asyncio
 import PyNaCl

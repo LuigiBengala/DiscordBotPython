@@ -1,8 +1,8 @@
 import nextcord
-import discord
 import asyncio
+
 from nextcord.ext import commands
-from discord import FFmpegPCMAudio
+from nextcord import FFmpegPCMAudio
 
 intents = nextcord.Intents.default()
 intents.message_content = True
@@ -16,7 +16,6 @@ async def SendImage(ctx):
 @bot.command(name = 'textTest')
 async def SendMessage(ctx):
     await ctx.send('this message was sucessufuly sent')
- 
  
 @bot.command(name = 'samsung')
 async def join(ctx):
