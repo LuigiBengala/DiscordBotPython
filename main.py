@@ -17,7 +17,7 @@ async def SendImage(ctx):
 async def SendMessage(ctx):
     await ctx.send('this message was sucessufuly sent') # Choose the message this command will send
  
-@bot.command(name = 'samsung')
+@bot.command(name = 'textAudio')
 async def join(ctx):
     if (ctx.author.voice):
       channel = ctx.message.author.voice.channel
