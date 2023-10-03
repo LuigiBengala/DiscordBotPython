@@ -28,20 +28,20 @@ async def sendMessage(ctx, message):
 async def message(ctx):
     await sendMessage(ctx, 'textMessage')
  
-async def playAudio(ctx, name):
+async def playAudio(ctx, name, duration):
     if (ctx.author.voice):
       channel = ctx.message.author.voice.channel
       voice = await channel.connect()
       source = FFmpegPCMAudio('./assets/audios/{name}.mp3') # Path to your audio file
       voice.play(source)
-      await asyncio.sleep(source.duration) # Set the time to sleep the same as the audio you want to play
+      await asyncio.sleep(duration) # Set the time to sleep the same as the audio you want to play
       await ctx.guild.voice_client.disconnect()
     else:
       await ctx.send("You are not connected to a voice channel.")
       
 @bot.command(name = 'audioTest')
 async def sendAudio(ctx):
-    await playAudio(ctx, 'audioTest') # Choose the audio this command will play
+    await playAudio(ctx, 'audioTest', 6) # Choose the audio this command will play and choose its duration by default it is set to 6 seconds
 
 if __name__ == '__main__':
     bot.run('Your token')
