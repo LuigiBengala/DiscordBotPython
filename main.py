@@ -18,7 +18,7 @@ async def image(ctx):
 
 @bot.command(name = 'imagetest')
 async def image(ctx):
-  await SendImage(ctx, 'imageTest')
+  await sendImage(ctx, 'imageTest')
   
     
 async def sendMessage(ctx, message):
