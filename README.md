@@ -21,7 +21,6 @@ pip install PyNaCl
 ## Adding an image to the bot
 
 1. Add the image to the folder `assets/images/`
-2. Replace the `{image}` with the name you gave to the image
 
 > **Note:** The image must be in `.jpg` format, if the image is in another format, you must change the extension in the code or the extention in the image
 
@@ -43,7 +42,6 @@ async def image(ctx):
 ## Adding an audio to the bot
 
 1. Add the audio to the folder `assets/audios/`
-2. Replace the `{audio}`, in the `playAudio` function, with the name you gave to the audio
 
 > **Note:** The audio must be in `.mp3` format, if the audio is in another format, you must change the extension in the code or the extention in the audio
 
@@ -67,8 +65,6 @@ async def sendAudio(ctx):
 1. Change the `textMessage` with the text you want to send
 
 > **Note:** both the `@bot.command` `textTest` is the comand the bot will use to send the text, the `textMessage` is the message the bot will send when the command is used
-
-```python
 
 ```python
 @bot.command(name = 'textTest')
