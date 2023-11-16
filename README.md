@@ -75,3 +75,11 @@ async def sendAudio(ctx):
 async def message(ctx):
     await sendMessage(ctx, 'textMessage')
 ```
+
+## Token
+
+1. Change the `token` with the token of your bot. If you don't know how to get the token, [click here](https://docs.discordbotstudio.org/setting-up-dbs/finding-your-bot-token)
+
+```python
+    bot.run('Your token')
+```
